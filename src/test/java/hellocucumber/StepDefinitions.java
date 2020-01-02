@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class StepDefinitions {
 
-    private static WebDriver driver = null;
+    public static WebDriver driver = null;
 
     @Given("User open browser")
     public void openBrowser(){
