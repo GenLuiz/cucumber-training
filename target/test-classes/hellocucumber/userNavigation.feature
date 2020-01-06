@@ -4,6 +4,5 @@ Feature: User Navigation Story
   I want to be able to access and navigate in the web store
 
 Scenario: The customer should be able to navigate to the web store home page
-  Given User open browser
   Given the customer access the "https://www.netshoes.com.br"
   Then I should see the search bar

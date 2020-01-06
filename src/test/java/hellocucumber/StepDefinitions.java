@@ -1,6 +1,7 @@
 package hellocucumber;
 
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -14,7 +15,7 @@ public class StepDefinitions {
 
     public static WebDriver driver = null;
 
-    @Given("User open browser")
+    @Before()
     public void openBrowser(){
         if(driver == null){
             System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
